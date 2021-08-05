@@ -16,7 +16,7 @@ if (anniPasseggero < 18){
 else if (anniPasseggero > 65){
     sconto = ((valoreBiglietto * 40) / 100);
 }
-if (anniPasseggero = 18 || anniPasseggero = 65 |{
+if (anniPasseggero > 18 && anniPasseggero < 65) {
     sconto = 0;
 }
 console.log(sconto)
