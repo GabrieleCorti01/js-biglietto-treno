@@ -2,9 +2,11 @@ let sconto
 
 let numeroChilometri = parseInt(prompt("Inserisci il numero di chilometri") )
 console.log (numeroChilometri)
+document.getElementById("distanza").innerHTML = numeroChilometri
 
 let anniPasseggero = parseInt(prompt("Inserissci la tua età"))
 console.log (anniPasseggero)
+document.getElementById("anni").innerHTML = anniPasseggero
 
 let valoreBiglietto = (numeroChilometri * 0.21)
 console.log (valoreBiglietto)
@@ -23,3 +25,4 @@ console.log(sconto)
 
 let prezzoBigliettoFinale = (valoreBiglietto - sconto).toFixed(2);
 console.log(prezzoBigliettoFinale)
+document.getElementById("prezzo-biglietto").innerHTML = prezzoBigliettoFinale
