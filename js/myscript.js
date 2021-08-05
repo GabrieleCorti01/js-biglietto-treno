@@ -21,5 +21,5 @@ if (anniPasseggero > 18 && anniPasseggero < 65) {
 }
 console.log(sconto)
 
-let prezzoBigliettoFinale = (valoreBiglietto - sconto);
+let prezzoBigliettoFinale = (valoreBiglietto - sconto).toFixed(2);
 console.log(prezzoBigliettoFinale)
