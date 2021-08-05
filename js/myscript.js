@@ -1,3 +1,4 @@
+let sconto
 
 let numeroChilometri = parseInt(prompt("Inserisci il numero di chilometri") )
 console.log (numeroChilometri)
@@ -5,14 +6,20 @@ console.log (numeroChilometri)
 let anniPasseggero = parseInt(prompt("Inserissci la tua età"))
 console.log (anniPasseggero)
 
-let prezzoBiglietto = (numeroChilometri * 0.21)
-console.log (prezzoBiglietto)
+let valoreBiglietto = (numeroChilometri * 0.21)
+console.log (valoreBiglietto)
 
-// let scontoMinoreni = (("prezzoBiglietto : 20") * 100);
-// console.log (prezzoBiglietto)
-
-let sconto
 
 if (anniPasseggero < 18){
-    sconto = (("prezzoBiglietto % 20") * 100);
+    sconto = ((valoreBiglietto * 20) / 100);
 }
+else if (anniPasseggero > 65){
+    sconto = ((valoreBiglietto * 40) / 100);
+}
+if (anniPasseggero = 18 || anniPasseggero = 65 |{
+    sconto = 0;
+}
+console.log(sconto)
+
+let prezzoBigliettoFinale = (valoreBiglietto - sconto);
+console.log(prezzoBigliettoFinale)
